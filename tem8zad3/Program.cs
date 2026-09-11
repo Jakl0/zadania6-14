@@ -15,7 +15,7 @@ public class HelloWorld
         {
             for(int j = 0; j < 6; j++)
             {
-                lis[i, j] = random.Next(1, 49);
+                lis[i, j] = random.Next(1, 50);
                 for(int k = 0; k < j; k++)
                 {
                     if (lis[i, k] == lis[i, j])

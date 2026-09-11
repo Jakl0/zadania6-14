@@ -1,5 +1,8 @@
 <Solution>
   <Project Path="tem10zad3/tem10zad3.csproj" Id="017d232b-5bf5-4342-894a-9393633d52df" />
+  <Project Path="tem11zad3/tem11zad3.csproj" Id="e46b59b0-7464-4fd0-aaed-58ab072a4335" />
+  <Project Path="tem12zad3/tem12zad3.csproj" Id="414b6a9a-74ab-4d4c-8449-fc45d552740a" />
+  <Project Path="tem13zad3/tem13zad3.csproj" Id="516712df-cea9-4c27-bd85-c96312b651bd" />
   <Project Path="tem6zad3/tem6zad3.csproj" />
   <Project Path="tem7zed3/tem7zed3.csproj" />
   <Project Path="tem8zad3/tem8zad3.csproj" Id="323ba5db-9667-4284-a655-385f4968240b" />
