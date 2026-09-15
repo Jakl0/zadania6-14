@@ -5,12 +5,11 @@ namespace abc
 {
     abstract class Pracownik
     {
-        protected string imie;
+        public string imie;
         public abstract double ObliczWynagrodzenie();
     }
     class PracownikEtatowy : Pracownik
     {
-        public string imie;
         public double pensjaMiesieczna;
         public PracownikEtatowy(double a , string b)
         {
@@ -24,7 +23,6 @@ namespace abc
     }
     class Zleceniobiorca : Pracownik
     {
-        public string imie;
         public double stawkaGodzinowa;
         public int LiczbaGodzin;
         public Zleceniobiorca(double a, int b,string c)
@@ -43,10 +41,16 @@ namespace abc
     {
         static void Main(string[] args)
         {
-            List<Pracownik> pr = new List<Pracownik>(
-                    new Zleceniobiorca(676, 67,"Mariusz")
-
-                );
+            List<Pracownik> pr = new List<Pracownik>();
+            pr.Add(new Zleceniobiorca(3, 3, "Bogdan"));
+            pr.Add(new PracownikEtatowy(3,"Mariusz"));
+            pr.Add(new Zleceniobiorca(78, 5, "Gabriel"));
+            pr.Add(new PracownikEtatowy(123, "Bartosz Benc"));
+            foreach(Pracownik p in pr)
+            {
+                Console.WriteLine(p.imie);
+                Console.WriteLine(p.ObliczWynagrodzenie());
+            }
         }
     }
 }
