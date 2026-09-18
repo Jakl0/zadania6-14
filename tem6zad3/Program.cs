@@ -41,7 +41,7 @@ public class HelloWorld
         {
             for (int j = 0; j < liczba-1; j++)
             {
-                if (tabliczka[j] > tabliczka[j + 1])
+                if (tabliczka[j] < tabliczka[j + 1])
                 {
                     var temp = tabliczka[j];
                     tabliczka[j] = tabliczka[j + 1];
